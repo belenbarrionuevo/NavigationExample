@@ -13,10 +13,12 @@ function Pantalla1({navigation}) {
 
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#fff' }}>
+      <Text>contador = {contador}</Text>
       <Text>Pantalla 1</Text>
     </View>
   );
 }
 
 export default Pantalla1;
+
 
