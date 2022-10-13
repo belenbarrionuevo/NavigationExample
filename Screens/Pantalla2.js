@@ -6,11 +6,12 @@ function Pantalla2({navigation}) {
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: "#fff"}}>
       <Text>Bienvenido a la Pantalla 2 </Text>
 
-      <Button title="Volver a pantalla 1" onPress={() => navigation.goBack()} /> 
+      <Button title="Pantalla 1" onPress={() => navigation.goBack()} /> 
     </View>
   );
 }
 
 export default Pantalla2;
+
 
 
