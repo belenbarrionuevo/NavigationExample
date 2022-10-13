@@ -12,7 +12,7 @@ const Drawer = createDrawerNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Screen3">
+      <Drawer.Navigator>
         <Drawer.Screen name="Screen1" component={Pantalla1} />
         <Drawer.Screen name="Screen2" component={Pantalla2} />
       </Drawer.Navigator>
@@ -32,4 +32,3 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
-
