@@ -1,14 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
+import * as React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import {createDrawerNavigator} from '@react-navigation/drawer';
 import { StyleSheet, Text, View } from 'react-native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import 'react-native-gesture-handler';
+import Pantalla1 from './Screens/Pantalla1';
+import Pantalla2 from './Screens/Pantalla2';
 
-export default function App() {
+const Drawer = createDrawerNavigator();
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Drawer.Navigator initialRouteName="Screen3">
+        <Drawer.Screen name="Screen1" component={Pantalla1} />
+        <Drawer.Screen name="Screen2" component={Pantalla2} />
+      </Drawer.Navigator>
+    </NavigationContainer>
   );
-}
+};
+
+export default App;
+
+
 
 const styles = StyleSheet.create({
   container: {
@@ -18,3 +32,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
