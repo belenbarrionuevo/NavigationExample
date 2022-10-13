@@ -1,4 +1,4 @@
-import {View, Text} from 'react-native';
+import {Button, View, Text} from 'react-native';
 import React, {useEffect, useState} from 'react';
 
 function Pantalla1({navigation}) {
@@ -15,6 +15,7 @@ function Pantalla1({navigation}) {
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#fff' }}>
       <Text>contador = {contador}</Text>
       <Text>Pantalla 1</Text>
+      <Button title = 'Pantalla 2' onPress = { () => navigation.navigate('Screen2')}/>
     </View>
   );
 }
